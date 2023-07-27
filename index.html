@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple E-commerce Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Registration and Login Section -->
+<section id="registration-login">
+    <h2>Registration and Login</h2>
+    <!-- Registration Form -->
+    <form id="registration-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- Login Form -->
+    <form id="login-form">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" name="login-username" required><br>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required><br>
+
+        <input type="submit" value="Login">
+    </form>
+</section>
+
+<!-- Product Listing Section -->
+<section id="product-listing">
+    <h2>Product Listing</h2>
+    <!-- Display products here -->
+    <div class="product">
+        <h3>Product 1</h3>
+        <img src="images (11).jpeg" alt="Product 1">
+        <p>Description of Product 1</p>
+        <p>Price: $10</p>
+        <p>Stock Quantity: 50</p>
+        <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Product 2</h3>
+        <img src="images (4).jpeg" alt="Product 2">
+        <p>Description of Product 2</p>
+        <p>Price: $15</p>
+        <p>Stock Quantity: 30</p>
+        <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+    </div>
+    <div class="product">
+    <h3>Product 1</h3>
+        <img src="images (11).jpeg" alt="Product 1">
+        <img src="images (4).jpeg" alt="Product 1">
+        
+        <img src="images (3).jpeg" alt="Product 1">
+        <img src="images (7).jpeg" alt="Product 1">
+        <img src="images (6).jpeg" alt="Product 1">
+        <p>Description of Product 1</p>
+        <p>Price: $10</p>
+        <p>Stock Quantity: 50</p>
+        <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Product 2</h3>
+        <!--<img src="images (10).jpeg" alt="Product 2">-->
+        <img src="images.jpeg" alt="Product 2">
+        <img src="images (8).jpeg" alt="Product 2">
+        <img src="images (1).jpeg" alt="Product 2">
+        <img src="images (2).jpeg" alt="Product 2">
+        <img src="images (9).jpeg" alt="Product 2">
+        <p>Description of Product 2</p>
+        <p>Price: $15</p>
+        <p>Stock Quantity: 30</p>
+        <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h3>Product 3</h3>
+        <!--<img src="images (10).jpeg" alt="Product 2">-->
+        <img src="images.jpeg" alt="Product 2">
+        <img src="images (8).jpeg" alt="Product 2">
+        <img src="images (1).jpeg" alt="Product 2">
+        <img src="images (2).jpeg" alt="Product 2">
+        <img src="images (9).jpeg" alt="Product 2">
+        <p>Description of Product 2</p>
+        <p>Price: $55</p>
+        <p>Stock Quantity: 40</p>
+        <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h3>Product 4</h3>
+        <!--<img src="images (10).jpeg" alt="Product 2">-->
+        <img src="images.jpeg" alt="Product 2">
+        <img src="images (8).jpeg" alt="Product 2">
+        <img src="images (1).jpeg" alt="Product 2">
+        <img src="images (2).jpeg" alt="Product 2">
+        <img src="images (9).jpeg" alt="Product 2">
+        <p>Description of Product 2</p>
+        <p>Price: $25</p>
+        <p>Stock Quantity: 20</p>
+        <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h3>Product 5</h3>
+        <!--<img src="images (10).jpeg" alt="Product 2">-->
+        <img src="images.jpeg" alt="Product 2">
+        <img src="images (8).jpeg" alt="Product 2">
+        <img src="images (1).jpeg" alt="Product 2">
+        <img src="images (2).jpeg" alt="Product 2">
+        <img src="images (9).jpeg" alt="Product 2">
+        <p>Description of Product 2</p>
+        <p>Price: $35</p>
+        <p>Stock Quantity: 30</p>
+        <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h3>Product 6</h3>
+        <!--<img src="images (10).jpeg" alt="Product 2">-->
+        <img src="images.jpeg" alt="Product 2">
+        <img src="images (8).jpeg" alt="Product 2">
+        <img src="images (1).jpeg" alt="Product 2">
+        <img src="images (2).jpeg" alt="Product 2">
+        <img src="images (9).jpeg" alt="Product 2">
+        <p>Description of Product 2</p>
+        <p>Price: $95</p>
+        <p>Stock Quantity: 35</p>
+        <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+    </div>
+    <!-- Add more products -->
+</section>
+
+<!-- Shopping Cart Section -->
+<section id="shopping-cart">
+    <h2>Shopping Cart</h2>
+    <!-- Display shopping cart items here -->
+    <ul id="cart-items">
+        <!-- List of cart items will be dynamically updated here -->
+    </ul>
+    <button id="clear-cart">Clear Cart</button>
+</section>
+
+<!-- Categories Section -->
+<section id="categories">
+    <h2>Categories</h2>
+    <!-- Display product categories here -->
+    <ul>
+        <li>Category 1</li>
+        <li>Category 2</li>
+        <!-- Add more categories -->
+    </ul>
+</section>
+
+<!-- Checkout and Order Confirmation Section -->
+<section id="checkout">
+    <h2>Checkout and Order Confirmation</h2>
+    <!-- Checkout form and order summary will be displayed here -->
+    <form id="checkout-form">
+        <!-- Checkout form fields will go here -->
+        <input type="submit" value="Place Order">
+    </form>
+</section>
+
+<!-- Featured Products Section -->
+<section id="featured-products">
+    <h2>Featured Products</h2>
+    <!-- Add carousel or grid with featured products here -->
+    <div class="featured-carousel">
+        <!-- Featured product 1 -->
+        <div class="featured-product">
+            <h3>Featured Product 1</h3>
+            <img src="images (3).jpeg" alt="Featured Product 1">
+            <p>Description of Featured Product 1</p>
+            <p>Price: $25</p>
+            <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+        </div>
+
+        <!-- Featured product 2 -->
+        <div class="featured-product">
+            <h3>Featured Product 2</h3>
+            <img src="images (7).jpeg" alt="Featured Product 2">
+            <p>Description of Featured Product 2</p>
+            <p>Price: $30</p>
+            <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+        </div>
+
+        <!-- Add more featured products -->
+    </div>
+</section>
+
+<!-- User Account Section -->
+<section id="user-account">
+    <h2>User Account</h2>
+    <p>Welcome, John Doe!</p>
+    <p>Email: john@example.com</p>
+    <p>Membership Level: Premium</p>
+    <!-- Display user account information and order history here -->
+</section>
+
+<footer>
+    &copy; 2023 My Store. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
